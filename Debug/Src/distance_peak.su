@@ -1,0 +1,12 @@
+distance_peak.c:25:6:printf_chr	16	static
+distance_peak.c:42:5:peak_index	20	static
+distance_peak.c:60:6:reconfigure_sweeps	16	static
+distance_peak.c:96:6:set_context	8	static
+distance_peak.c:140:7:get_dist	8	static
+distance_peak.c:156:22:dist_blocking_calls	48	static
+distance_peak.c:222:6:acc_dist_funtion	112	static
+distance_peak.c:251:22:execute_envelope_with_blocking_calls	48	static
+distance_peak.c:312:6:acc_example_funtion	112	static
+distance_peak.c:369:6:acc_dist_peak	112	static
+distance_peak.c:445:22:dist_one_sven_calls	40	static
+distance_peak.c:518:6:test_one_to_seven	184	static
