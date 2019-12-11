@@ -1,5 +1,5 @@
-example_power_bin_once.c:32:5:acc_example_power_bin_once	184	dynamic
-example_power_bin_once.c:121:6:reconfigure_sweeps_powerbin	24	static
-example_power_bin_once.c:162:6:reconfigure_sweeps_sparse	16	static
-example_power_bin_once.c:196:6:acc_power_bin	176	dynamic
-example_power_bin_once.c:270:6:acc_sparse	160	static
+example_power_bin_once.c:32:5:acc_example_power_bin_once	272	dynamic
+example_power_bin_once.c:129:6:reconfigure_sweeps_powerbin	32	static
+example_power_bin_once.c:170:6:reconfigure_sweeps_sparse	32	static
+example_power_bin_once.c:204:6:acc_power_bin	192	dynamic
+example_power_bin_once.c:278:6:acc_sparse	160	static

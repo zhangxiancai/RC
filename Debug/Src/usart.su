@@ -1,10 +1,10 @@
 usart.c:54:6:MX_USART1_UART_Init	8	static
 usart.c:75:6:MX_USART3_UART_Init	8	static
-usart.c:95:6:HAL_UART_MspInit	48	static
-usart.c:150:6:HAL_UART_MspDeInit	0	static
+usart.c:95:6:HAL_UART_MspInit	56	static
+usart.c:150:6:HAL_UART_MspDeInit	16	static
 usart.c:205:1:__io_putchar	16	static
-usart.c:213:5:_write	16	static
-usart.c:224:6:UART_Send_Array	24	static
-usart.c:239:6:HAL_UART_RxCpltCallback	8	static
+usart.c:213:5:_write	32	static
+usart.c:224:6:UART_Send_Array	32	static
+usart.c:239:6:HAL_UART_RxCpltCallback	16	static
 usart.c:283:6:USART1_IRQHandler	16	static
 usart.c:306:6:USART3_IRQHandler	16	static

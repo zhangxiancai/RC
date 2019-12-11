@@ -53,16 +53,22 @@ int acc_example_power_bin_once()
 	}
 
 
-	acc_service_power_bins_requested_bin_count_set(power_bins_configuration, 5);//设置数据个数
+	acc_service_power_bins_requested_bin_count_set(power_bins_configuration, 16);//设置数据个数
 
 	 acc_sweep_configuration_t sweep_configuration;
 	 sweep_configuration = acc_service_get_sweep_configuration(power_bins_configuration);
 	 if (sweep_configuration == NULL) {
 	 /* Handle error */
 	 }
-	 acc_sweep_configuration_requested_range_set(sweep_configuration, 0.1, 0.4);//设置开始距离和测量范围,测量范围<0.9m
+	 acc_sweep_configuration_requested_range_set(sweep_configuration, 0.12, 0.48);//设置开始距离和测量范围,测量范围<0.9m
+	 acc_sweep_configuration_tx_disable_set(sweep_configuration, true);
+	 // Decrease receiver gain
+//	 float current_gain;
+//	 current_gain = acc_sweep_configuration_receiver_gain_get(sweep_configuration);
+	 //acc_sweep_configuration_receiver_gain_set(sweep_configuration, 0.8 * current_gain);
 
-
+	 // Turn off transmitter to only record noise
+	 acc_sweep_configuration_tx_disable_set(sweep_configuration, true);//归一化
 
 	acc_service_handle_t power_bins_handle = acc_service_create(power_bins_configuration);
 
@@ -95,9 +101,11 @@ int acc_example_power_bin_once()
 //		}
 //		printf("\n");
 
-		printf("%u %u %u %u %u %u %u %u %u\n",(unsigned)n_bins,(unsigned)radar_data[0],
+		printf("%u %u %u %u %u %u %u %u %u %u %u %u %u %u %u %u %u\n",(unsigned)n_bins,(unsigned)radar_data[0],
 				(unsigned)radar_data[1],(unsigned)radar_data[2],(unsigned)radar_data[3],
-				(unsigned)radar_data[4],(unsigned)radar_data[5],(unsigned)radar_data[6],(unsigned)radar_data[7]);
+				(unsigned)radar_data[4],(unsigned)radar_data[5],(unsigned)radar_data[6],(unsigned)radar_data[7],
+			  (unsigned)radar_data[8],(unsigned)radar_data[9],(unsigned)radar_data[10],(unsigned)radar_data[11],
+			 (unsigned)radar_data[12],(unsigned)radar_data[13],(unsigned)radar_data[14],(unsigned)radar_data[15]);
 	}
 	else
 	{

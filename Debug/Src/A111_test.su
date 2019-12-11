@@ -1,7 +1,8 @@
-A111_test.c:20:6:UART_send_data	0	static
-A111_test.c:32:10:return_data_ch	0	static
-A111_test.c:51:6:get_cmd	40	static
+core_cm4.h:1790:22:NVIC_SystemReset	4	static
+A111_test.c:20:6:UART_send_data	24	static
+A111_test.c:32:10:return_data_ch	24	static
+A111_test.c:51:6:get_cmd	16	static
 A111_test.c:152:6:run_distance	8	static
 A111_test.c:164:6:run_power_bin	8	static
 A111_test.c:177:6:run_example	8	static
-A111_test.c:192:6:select_mode	24	static
+A111_test.c:192:6:select_mode	8	static
